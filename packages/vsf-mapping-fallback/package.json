@@ -8,5 +8,22 @@
   ],
   "repository": "https://github.com/kodbruket/vsf-utils",
   "homepage": "http://kodbruket.se",
-  "author": "Max Malm <max@kodbruket.se>"
+  "author": "Max Malm <max@kodbruket.se>",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "esm/index.d.ts",
+  "scripts": {
+    "clean": "rimraf ./cjs ./esm",
+    "prebuild": "yarn clean",
+    "build": "yarn build:cjs && yarn build:esm",
+    "build:cjs": "tsc -p tsconfig.build.json --module commonjs --outDir cjs",
+    "build:esm": "tsc -p tsconfig.build.json --module esnext --outDir esm",
+    "test": "mocha \"test/**/*.spec.ts?(x)\"",
+    "prepack": "yarn build"
+  },
+  "sideEffects": false,
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  }
 }

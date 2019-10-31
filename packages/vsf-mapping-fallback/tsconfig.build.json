@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@kodbruket/*": [
+        "node_modules/@kodbruket/*/src"
+      ]
+    }
+  },
+  "include": [
+    "src"
+  ]
+}

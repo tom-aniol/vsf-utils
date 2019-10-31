@@ -6,11 +6,13 @@ https://docs.vuestorefront.io/guide/basics/url.html#how-to-customize-the-mapping
 
 ## Usage
 
-Clone this repository to `src/modules/vsf-mapping-fallback` and use it like below
+```sh
+yarn add @kodbruket/vsf-mapping-fallback
+```
 
 ```js
-import { extendMappingFallback, Payload } from 'src/modules/vsf-mapping-fallback'
-import { forProduct, forCategory, forStoryblok, tap } from 'src/modules/vsf-mapping-fallback/builtin'
+import { extendMappingFallback, Payload } from '@kodbruket/vsf-mapping-fallback'
+import { forProduct, forCategory, forStoryblok, tap } from '@kodbruket/vsf-mapping-fallback/builtin'
 
 export const forDemo = async (context, { url, params }: Payload) => {
   if (url === 'demo') {
