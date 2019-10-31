@@ -1,6 +1,6 @@
 {
   "name": "@kodbruket/vsf-mapping-fallback",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Mapping Fallback loader for Vue Storefront",
   "keywords": [
     "vsf",
@@ -25,5 +25,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "c32f8be7f6e026a04781981ae098d91a0e6339f3"
+  "gitHead": "0331beb005ff2394baa6c8750f42423d11f6a4a4"
 }
