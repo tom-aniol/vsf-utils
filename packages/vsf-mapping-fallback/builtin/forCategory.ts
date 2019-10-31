@@ -1,3 +1,4 @@
+// @ts-ignore
 import { removeStoreCodeFromRoute } from '@vue-storefront/core/lib/multistore'
 import { Payload } from '../types/Payload'
 
@@ -16,4 +17,5 @@ export const forCategory = async ({ dispatch }, { url }: Payload) => {
   } catch {
     return undefined
   }
+  return undefined
 }

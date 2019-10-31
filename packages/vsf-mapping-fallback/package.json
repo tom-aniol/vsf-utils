@@ -24,5 +24,6 @@
   "sideEffects": false,
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "c32f8be7f6e026a04781981ae098d91a0e6339f3"
 }

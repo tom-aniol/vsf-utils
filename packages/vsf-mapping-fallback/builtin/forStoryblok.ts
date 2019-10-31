@@ -12,4 +12,5 @@ export const forStoryblok = async ({ dispatch }, { url: fullSlug }: Payload) => 
       }
     }
   }
+  return undefined
 }
